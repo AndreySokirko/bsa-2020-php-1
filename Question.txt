@@ -1,0 +1,33 @@
+Привет!
+Unit test 2
+BooksGenerator
+   return [
+            [
+                50,
+                [
+                    new Book('Don Quixote', 100, 100), нет
+                    new Book('The Great Gatsby', 50, 50), нет
+                    new Book('Harry Potter', 20, 20)!подходит 
+                ],
+                60,
+                [
+                    new Book('Hamlet', 150, 30),нет
+                    new Book('Crime and Punishment', 600, 50),нет
+                    new Book('Pride and Prejudice', 40, 60)!подходит 
+                ],
+                [   ! это мы должны получить
+                    new Book('Don Quixote', 100, 100),
+                    new Book('The Great Gatsby', 50, 50),
+                    new Book('Pride and Prejudice', 40, 60)
+                ]
+            ]
+            
+            а получаем 
+            [
+            new Book('Pride and Prejudice', 40, 60)!подходит 
+            new Book('Harry Potter', 20, 20)!подходит ]
+                Как при таких условиях можно получить 3 записи в результирующем массиве?
+                ту  условие 
+                60Б= - цена  , 50Ю= - кол страниц
+                $this->assertEquals($filteredBooks, iterator_to_array($generator,false));
+                Значит при таких условиях Unit test  не пройдет
