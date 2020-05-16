@@ -126,8 +126,8 @@ class RaceTest extends TestCase
      */
     public function testStart(Car $car1, Car $car2)
     {
-//        $this->track->add($car1);
-//        $this->track->add($car2);
+        $this->track->add($car1);
+        $this->track->add($car2);
         $this->assertEquals($car1, $this->track->run());
     }
 }

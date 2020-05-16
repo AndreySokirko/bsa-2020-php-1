@@ -54,6 +54,7 @@ class BuiltInServerTest extends TestCase
         $matches = [];
 
         preg_match_all('/([\w\s-]+)\: (\d+), (\d+)/', $page, $matches, PREG_SET_ORDER, 0);
+
         $names = array_map(
             function ($match) {
                 return $match[1];

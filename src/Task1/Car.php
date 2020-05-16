@@ -6,13 +6,13 @@ namespace App\Task1;
 
 class Car
 {
-    public   $id;
-    public   $image;
-    public   $name;
-    public   $speed;
-    public   $pitStopTime;
-    public   $fuelConsumption;
-    public   $fuelTankVolume;
+    private   $id;
+    private   $image;
+    private   $name;
+    private   $speed;
+    private   $pitStopTime;
+    private   $fuelConsumption;
+    private   $fuelTankVolume;
 
     public function __construct(
         int $id,
@@ -30,13 +30,13 @@ class Car
         $this->speed = $speed;
         $this->pitStopTime = $pitStopTime;
         $this->fuelConsumption = $fuelConsumption;
-        $this->fuelTankVolume = $fuelTankVolume;
+        $this->fuelTankVolume = $fuelTankVolume; 
     }
 
     public function getId(): int
     {
         // @todo
-        return (int)$this->id;
+        return $this->id;
     }
 
     public function getImage(): string
@@ -54,7 +54,7 @@ class Car
     public function getSpeed(): int
     {
         // @todo
-        return (int)$this->speed;
+        return $this->speed;
     }
 
     public function getPitStopTime(): int

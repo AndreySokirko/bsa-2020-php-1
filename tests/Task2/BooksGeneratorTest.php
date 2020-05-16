@@ -48,7 +48,7 @@ class BooksGeneratorTest extends TestCase
             [
                 50,
                 [
-                    new Book('Don Quixote', 55, 100),
+                    new Book('Don Quixote', 100, 100),
                     new Book('The Great Gatsby', 50, 50),
                     new Book('Harry Potter', 20, 20)
                 ],
@@ -59,7 +59,7 @@ class BooksGeneratorTest extends TestCase
                     new Book('Pride and Prejudice', 40, 60)
                 ],
                 [
-                    new Book('Don Quixote', 55, 100),
+                    new Book('Don Quixote', 100, 100),
                     new Book('The Great Gatsby', 50, 50),
                     new Book('Pride and Prejudice', 40, 60)
                 ]
